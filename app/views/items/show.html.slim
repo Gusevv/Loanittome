@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @item.title
+p
+  strong Description:
+  = @item.description
+p
+  strong Price per day:
+  = @item.price_per_day
+
+= link_to 'Edit', edit_item_path(@item)
+'|
+= link_to 'Back', items_path
