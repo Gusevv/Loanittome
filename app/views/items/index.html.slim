@@ -3,6 +3,7 @@ h1 Listing items
 table
   tr
     th Title
+    th Category
     th Description
     th Price per day
     th
@@ -12,6 +13,7 @@ table
   - @items.each do |item|
     tr
       td = item.title
+      td = item.category_name
       td = item.description
       td = item.price_per_day
       td = link_to 'Show', item
