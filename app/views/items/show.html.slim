@@ -12,7 +12,13 @@ p
 p
   strong Price per day:
   = @item.price_per_day
+  
+= image_tag @item.photo.url
+= image_tag @item.photo.url(:medium)
+ 
 
 = link_to 'Edit', edit_item_path(@item)
 '|
 = link_to 'Back', items_path
+
+
