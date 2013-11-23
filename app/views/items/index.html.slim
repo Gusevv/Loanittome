@@ -4,8 +4,10 @@ table
   tr
     th Название
     th Категория
+    th Пользователь
     th Описание
     th Цена за день
+    th 
     th
     th
     th
@@ -14,6 +16,7 @@ table
     tr
       td = item.title
       td = item.category_name
+      td = item.user_email
       td = item.description
       td = item.price_per_day
       td = link_to 'Show', item
